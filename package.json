@@ -10,10 +10,34 @@
   },
   "dependencies": {
     "@next/font": "13.1.5",
+    "@vercel/analytics": "^0.1.8",
+    "algoliasearch": "^4.14.3",
+    "date-fns": "^2.29.3",
     "eslint": "8.32.0",
     "eslint-config-next": "13.1.5",
+    "gray-matter": "^4.0.3",
     "next": "13.1.5",
+    "next-instantsearch": "^0.3.15",
+    "next-seo": "^5.15.0",
+    "nextjs-progressbar": "^0.0.16",
+    "preact": "^10.11.3",
+    "preact-render-to-string": "^5.2.6",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-instantsearch-dom": "^6.38.3",
+    "remark": "^14.0.2",
+    "remark-autolink-headings": "^7.0.1",
+    "remark-html": "^15.0.1",
+    "remark-oembed": "^1.2.2",
+    "remark-slug": "^7.0.1",
+    "sitemap": "^7.1.1",
+    "slugify": "^1.6.5",
+    "styled-components": "^5.3.6",
+    "styled-icons": "^10.47.0",
+    "styled-media-query": "^2.1.2"
+  },
+  "devDependencies": {
+    "babel-plugin-prismjs": "^2.1.0"
   }
 }
