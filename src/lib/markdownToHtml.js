@@ -1,23 +1,24 @@
-import { remark } from 'remark'
-import html from 'remark-html'
-import headings from 'remark-autolink-headings'
-import slug from 'remark-slug'
-import remarkOembed from 'remark-oembed'
+import withShiki from '@stefanprobst/remark-shiki'
+import fromMarkdown from 'remark-parse'
+import * as shiki from 'shiki'
+import { unified } from 'unified'
+import toHast from 'remark-rehype'
+import withHtmlInMarkdown from 'rehype-raw'
+import toHtml from 'rehype-stringify'
 
 async function markdownToHtml(markdown) {
-  const result = await remark()
-    .use(html)
-    .use(remarkOembed)
-    .use(slug)
-    .use(headings, {
-      behavior: 'wrap',
-      linkProperties: {
-        className: 'anchor'
-      }
-    })
-    .process(markdown)
+  const highlighter = await shiki.getHighlighter({ theme: 'nord' })
 
-  return result.toString()
+  const processor = unified()
+    .use(fromMarkdown)
+    .use(withShiki, { highlighter })
+    .use(toHast, { allowDangerousHtml: true })
+    .use(withHtmlInMarkdown)
+    .use(toHtml)
+
+  const html = await processor.process(markdown)
+
+  return String(html)
 }
 
 export default markdownToHtml;

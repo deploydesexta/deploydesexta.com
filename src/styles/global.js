@@ -106,5 +106,19 @@ const GlobalStyles = createGlobalStyle`
     cursor: pointer;
     text-decoration: none !important;
   }
+
+  .shiki-inline {
+    background: var(--shiki-inline-background) !important;
+    padding: 2px;
+    color: var(--shiki-inline-color) !important;
+    font-size: 1.1rem;
+  }
+  
+  p > code {
+    background: var(--shiki-inline-background) !important;
+    padding: 2px;
+    color: var(--shiki-inline-color) !important;
+    font-size: 0.9rem;
+  }
 `
 export default GlobalStyles

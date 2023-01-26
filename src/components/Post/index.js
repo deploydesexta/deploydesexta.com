@@ -1,6 +1,3 @@
-import Prism from 'prismjs'
-
-import { useEffect } from 'react'
 import Link from 'next/link'
 import { NextSeo } from 'next-seo'
 
@@ -17,10 +14,6 @@ import {
 } from 'styles/base'
 
 const BlogPost = ({ post }) => {
-  useEffect(() => {
-    Prism.highlightAll()
-  }, [post])
-
   return (
     <>
       <NextSeo
