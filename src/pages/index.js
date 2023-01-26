@@ -5,7 +5,6 @@ import { buildAlgoliaIndexes } from 'lib/buildAlgoliaIndexes'
 import Home from 'components/Home'
 
 const HomePage = ({ posts }) => {
-  console.log('RENDERING HOMEPAGE')
   return <Home posts={posts} />
 }
 
@@ -21,7 +20,6 @@ export async function getStaticProps() {
     await buildAlgoliaIndexes(posts)
   }
 
-  console.log('GET STATIC PROPS')
   return {
     props: {
       posts
