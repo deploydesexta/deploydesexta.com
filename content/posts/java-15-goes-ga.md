@@ -19,7 +19,7 @@ Para começar vamos instalar a *JDK* 15. Eu utilizo o [sdkman](https://sdkman.io
 
 Utilizando o *sdkman*, primeiro listamos as *JDKs* disponíveis:
 
-```shell
+```bash
 sdk list java
 ```
 

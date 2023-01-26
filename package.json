@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@next/font": "13.1.5",
+    "@stefanprobst/remark-shiki": "^2.2.0",
     "@vercel/analytics": "^0.1.8",
     "algoliasearch": "^4.14.3",
     "bootstrap": "^5.2.3",
@@ -22,26 +23,23 @@
     "next-instantsearch": "^0.3.15",
     "next-seo": "^5.15.0",
     "nextjs-progressbar": "^0.0.16",
-    "preact": "^10.11.3",
-    "preact-render-to-string": "^5.2.6",
     "react": "18.2.0",
     "react-bootstrap": "^2.7.0",
     "react-dom": "18.2.0",
     "react-infinite-scroll-component": "^6.1.0",
     "react-instantsearch-dom": "^6.38.3",
+    "rehype-raw": "^6.1.1",
+    "rehype-stringify": "^9.0.3",
     "remark": "^14.0.2",
-    "remark-autolink-headings": "^7.0.1",
-    "remark-html": "^15.0.1",
-    "remark-oembed": "^1.2.2",
-    "remark-slug": "^7.0.1",
+    "remark-parse": "^10.0.1",
+    "remark-rehype": "^10.1.0",
     "sharp": "^0.31.3",
+    "shiki": "^0.12.1",
     "sitemap": "^7.1.1",
     "slugify": "^1.6.5",
     "styled-components": "^5.3.6",
     "styled-icons": "^10.47.0",
-    "styled-media-query": "^2.1.2"
-  },
-  "devDependencies": {
-    "babel-plugin-prismjs": "^2.1.0"
+    "styled-media-query": "^2.1.2",
+    "unified": "^10.1.2"
   }
 }
