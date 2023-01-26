@@ -1,3 +1,5 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { Analytics } from '@vercel/analytics/react';
@@ -27,7 +29,7 @@ function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Deploy de Sexta</title>
+        <title>deploy de sexta</title>
         <link rel="shortcut icon" href="/favicon.ico" />
         <link
           rel="apple-touch-icon"
@@ -41,6 +43,24 @@ function App({ Component, pageProps }) {
         <meta
           name="description"
           content=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/GothamRnd-Light.ttf"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/GothamRnd-Medium.ttf"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/GothamRnd-Bold.otf"
+          as="font"
+          crossOrigin=""
         />
       </Head>
       <GlobalStyles />

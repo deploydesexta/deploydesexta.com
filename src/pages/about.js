@@ -1,11 +1,9 @@
 import { NextSeo } from 'next-seo'
 
-import SocialLinks from 'components/SocialLinks'
 import {
   BLOG_HOST,
   BLOG_TITLE,
 } from 'lib/constants'
-import { MainContent } from 'styles/base'
 
 const AboutPage = () => (
   <>
@@ -28,7 +26,7 @@ const AboutPage = () => (
         ]
       }}
     />
-    <MainContent>
+    <div className="container">
       <h1>Sobre mim</h1>
       <p>
         Sou Full Stack 💻 desde 2014, onde comecei minha jornada com 
@@ -75,9 +73,7 @@ const AboutPage = () => (
         Você pode entrar em contato comigo através de qualquer uma das minhas
         redes sociais.
       </p>
-
-      <SocialLinks hideStyle />
-    </MainContent>
+    </div>
   </>
 )
 

@@ -1,4 +1,4 @@
-import BlogPost from 'templates/blog-post'
+import BlogPost from 'components/Post'
 import { getPostBySlug, getAllPosts } from 'lib/api'
 import markdownToHtml from 'lib/markdownToHtml'
 
