@@ -74,9 +74,9 @@ function App({ Component, pageProps }) {
           showSpinner={false}
         />
         <Component {...pageProps} />
-        <Analytics />
-        <GoogleAnalytics />
       </Layout>
+      <Analytics />
+      <GoogleAnalytics />
     </>
   )
 }

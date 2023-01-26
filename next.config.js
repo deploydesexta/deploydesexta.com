@@ -1,3 +1,4 @@
+const redirects = require('./content/redirects');
 
 const nextConfig = {
   webpack: (config, { dev, isServer }) => {
@@ -15,6 +16,9 @@ const nextConfig = {
     }
 
     return config
+  },
+  async redirects() {
+    return redirects
   },
 }
 
