@@ -2,10 +2,11 @@ import { getAllPosts } from 'lib/api'
 import { generateSitemap } from 'lib/generateSitemap'
 import { buildAlgoliaIndexes } from 'lib/buildAlgoliaIndexes'
 
-import BlogList from 'templates/blog-list'
+import Home from 'components/Home'
 
-const Post = ({ posts }) => {
-  return <BlogList posts={posts} />
+const HomePage = ({ posts }) => {
+  console.log('RENDERING HOMEPAGE')
+  return <Home posts={posts} />
 }
 
 export async function getStaticProps() {
@@ -20,6 +21,7 @@ export async function getStaticProps() {
     await buildAlgoliaIndexes(posts)
   }
 
+  console.log('GET STATIC PROPS')
   return {
     props: {
       posts
@@ -27,4 +29,4 @@ export async function getStaticProps() {
   }
 }
 
-export default Post
+export default HomePage

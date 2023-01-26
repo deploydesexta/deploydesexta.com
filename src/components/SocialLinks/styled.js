@@ -1,15 +1,15 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
 
-import transitions from 'styles/transitions'
-
 export const SocialLinksWrapper = styled.nav`
   margin: 2rem auto;
   width: 100%;
+  max-width: 300px;
 
   ${media.lessThan('large')`
     order: 2;
     margin: 0 0 1rem;
+    max-width: 100%;
   `}
 `
 
@@ -18,11 +18,11 @@ export const SocialLinksList = styled.ul`
   display: flex;
   justify-content: space-around;
   list-style: none !important;
+  padding: 0;
 
   a {
     color: var(--texts);
     text-decoration: none;
-    transition: ${transitions.COLOR};
 
     &:hover {
       color: var(--highlight);
