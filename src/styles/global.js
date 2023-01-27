@@ -21,6 +21,7 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     --main-color: #0059a0;
+    --gray-color: #f6f3f3;
     --bs-primary: #0059a0;
 
     border-top: 10px solid var(--highlight);

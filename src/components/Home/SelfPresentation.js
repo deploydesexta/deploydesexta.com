@@ -17,11 +17,11 @@ const SelfPresentation = () => (
       <div className="col-12 col-md-9">
         <S.Hello>Prazer! Me chamo Gabriel.</S.Hello>
         <S.Text>
-          Trabalho com tecnologia desde 2014 e atulamente sou 
+          Trabalho com tecnologia desde 2014 e atualmente sou 
           <span className="gotham-bold"> Engineer Manager </span> 
           no <span className="gotham-bold" style={{color: '#fccf00'}}> Mercado Livre </span>.
           As minhas intenções com esse blog é documentar meus aprendizados 
-          e compartilhar com você o conhecimento obtido nessa jornada infinita de conteúdo tech.
+          e compartilhar com você o conhecimento obtido nessa jornada infinita do roadmap tech.
         </S.Text>
       </div>
     </div>
