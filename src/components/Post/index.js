@@ -5,13 +5,19 @@ import { BLOG_HOST, BLOG_TITLE } from 'lib/constants'
 import { timeToRead } from 'lib/utils'
 
 import {
+  MainContent,
+  ButtonBack,
+} from 'styles/base'
+
+import Comments from 'components/Comments'
+
+import {
+  CommentWrapper,
   PostHeader,
   PostTitle,
   PostDescription,
   PostDate,
-  MainContent,
-  ButtonBack
-} from 'styles/base'
+} from './styled'
 
 const BlogPost = ({ post }) => {
   return (
@@ -46,6 +52,10 @@ const BlogPost = ({ post }) => {
         <MainContent>
           <div dangerouslySetInnerHTML={{ __html: post.content }} />
         </MainContent>
+        
+        <CommentWrapper>
+          <Comments />
+        </CommentWrapper>
       </div>
     </>
   )
